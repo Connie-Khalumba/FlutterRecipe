@@ -15,17 +15,18 @@
         Recipe(
           title: 'Spaghetti Bolognese', // Recipe name.
           description: 'A classic Italian pasta dish with rich tomato sauce.', // Short description.
-          imageUrl: 'C:/Users/Connie/Desktop/FlutterRecipe/recipe_app/assets/images/menu-4.png', // Example image URL.
+          imageUrl: 'assets/images/menu-1.png', // Example image URL.
         ),
         Recipe(
           title: 'Chicken Curry', // Recipe name.
           description: 'A flavorful and spicy chicken curry.', // Short description.
-          imageUrl: 'C:/Users/Connie/Desktop/FlutterRecipe/recipe_app/assets/images/menu-3.png', // Example image URL.
+          imageUrl: 'assets/images/menu-4.png', // Example image URL.
         ),
       ];
 
       return MaterialApp(
-        title: 'Recipe App', // App title shown in the device task manager.
+        title: 'Recipe App', 
+        debugShowCheckedModeBanner: false,// App title shown in the device task manager.
         theme: ThemeData(primarySwatch: Colors.blue), // Set a blue theme.
         home: HomeScreen(recipes: recipes), // Set HomeScreen as the first screen.
       );
